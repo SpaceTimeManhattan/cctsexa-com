@@ -105,9 +105,12 @@ footer{background:var(--navy);color:#cfc5b1;text-align:center;padding:26px 20px 
 footer q{display:block;font:italic 19px/1.5 var(--serif);color:var(--goldl);quotes:none;margin:0 auto 6px;max-width:26em}
 footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-bottom:18px}footer a{color:#f3ead8}
 @media (min-width:720px){h1{font-size:60px}.pay{grid-template-columns:repeat(3,1fr)}.hero .cta{display:inline-block;margin:22px 0 0}}
+.sx{background:#090b17;line-height:0;text-align:center}
+.sx video{width:100%;max-width:760px;height:auto;aspect-ratio:16/9;display:block;margin:0 auto;background:#090b17}
 </style>
 </head>
 <body>
+<div class="sx"><video id="sx-logo" autoplay muted loop playsinline preload="auto" width="960" height="540" poster="assets/sx/sexamath-logo-poster.webp" aria-label="SEXAMATH.si Super Intelligence animated logo"><source src="assets/sx/sexamath-logo.mp4" type="video/mp4"></video></div>
 <header class="hero"><div class="frame">
 <img class="emb" src="assets/img/ufs-emblem.webp" width="256" height="294" alt="U.F.S. Unified Field Systems emblem" fetchpriority="high">
 <h1>CCT/SEXA</h1>
@@ -225,5 +228,6 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 function ytLoad(el){var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+el.dataset.id+'?autoplay=1&rel=0&playsinline=1';f.title=el.dataset.title||'CCT/SEXA video';f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;var d=document.createElement('div');d.className='yt';d.appendChild(f);el.replaceWith(d);}
 document.querySelectorAll('button.yt').forEach(function(b){b.addEventListener('click',function(){ytLoad(b);},{once:true});});
 </script>
+<script>(function(){var v=document.getElementById('sx-logo');if(!v)return;if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){v.removeAttribute('autoplay');v.pause();return}var p=v.play();if(p&&p.catch)p.catch(function(){})})();</script>
 <script type="module" src="assets/reader.js"></script>
 </body></html>
