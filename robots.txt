@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cctsexa.com/sitemap.xml
