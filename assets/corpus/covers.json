@@ -3,7 +3,7 @@
   "cover_base": "assets/corpus/covers/{book_key}.webp",
   "swap": "To use later books_with_covers/previews, copy those files over site_preview/covers and assets/corpus/covers, or change cover_base. Download links stay out of the public page until a public URL exists (private repo links will not be published).",
   "target_height_px": 1800,
-  "n": 50,
+  "n": 48,
   "covers": [
     {
       "book_key": "W001-A",
@@ -261,21 +261,6 @@
       "download_pdf": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/W018_Hardware-Verifiable-Recursive-Admissibility-for_book_with_cover.pdf"
     },
     {
-      "book_key": "W020",
-      "work_class": "paper",
-      "source": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/previews/W020_The-Spine-Fold-Theorem-Glyphic-Closure-Five-Equa_book_with_cover_p1.jpg",
-      "how": "books_with_covers/previews (W020_The-Spine-Fold-Theorem-Glyphic-Closure-Five-Equa_book_with_cover_p1.jpg)",
-      "webp": "/workspace/absolute_sexa_math_corpus/_editions/site_preview/covers/W020.webp",
-      "jpg": "/workspace/absolute_sexa_math_corpus/_editions/site_preview/covers/W020.jpg",
-      "width": 1273,
-      "height": 1800,
-      "webp_bytes": 81398,
-      "jpg_bytes": 176003,
-      "web_path": "assets/corpus/covers/W020.webp",
-      "web_path_jpg": "assets/corpus/covers/W020.jpg",
-      "download_pdf": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/W020_The-Spine-Fold-Theorem-Glyphic-Closure-Five-Equa_book_with_cover.pdf"
-    },
-    {
       "book_key": "W021",
       "work_class": "paper",
       "source": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/previews/W021_A-Dimensional-Cascade-Model-of-Gravity-in-the-SE_book_with_cover_p1.jpg",
@@ -464,11 +449,12 @@
       "jpg": "/workspace/absolute_sexa_math_corpus/_editions/site_preview/covers/W058.jpg",
       "width": 1392,
       "height": 1800,
-      "webp_bytes": 129848,
-      "jpg_bytes": 246997,
+      "webp_bytes": 120222,
+      "jpg_bytes": 265444,
       "web_path": "assets/corpus/covers/W058.webp",
       "web_path_jpg": "assets/corpus/covers/W058.jpg",
-      "download_pdf": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/W058_Monstrous-Moonshine-and-Monster-Symmetric-Admiss_book_with_cover.pdf"
+      "download_pdf": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/W058_Monstrous-Moonshine-and-Monster-Symmetric-Admiss_book_with_cover.pdf",
+      "note": "Cover rebuilt 2026-11-23 without Jess Leffler (Jered's instruction)."
     },
     {
       "book_key": "W061",
@@ -484,21 +470,6 @@
       "web_path": "assets/corpus/covers/W061.webp",
       "web_path_jpg": "assets/corpus/covers/W061.jpg",
       "download_pdf": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/W061_Addendum-to-Book-IV-Upgrading-the-Quaternionic-A_book_with_cover.pdf"
-    },
-    {
-      "book_key": "W063",
-      "work_class": "paper",
-      "source": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/previews/W063_TYPES-Gamma-Spine-abstract_book_with_cover_p1.jpg",
-      "how": "books_with_covers/previews (W063_TYPES-Gamma-Spine-abstract_book_with_cover_p1.jpg)",
-      "webp": "/workspace/absolute_sexa_math_corpus/_editions/site_preview/covers/W063.webp",
-      "jpg": "/workspace/absolute_sexa_math_corpus/_editions/site_preview/covers/W063.jpg",
-      "width": 1274,
-      "height": 1800,
-      "webp_bytes": 80060,
-      "jpg_bytes": 173302,
-      "web_path": "assets/corpus/covers/W063.webp",
-      "web_path_jpg": "assets/corpus/covers/W063.jpg",
-      "download_pdf": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/W063_TYPES-Gamma-Spine-abstract_book_with_cover.pdf"
     },
     {
       "book_key": "W069",
