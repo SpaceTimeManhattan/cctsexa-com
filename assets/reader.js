@@ -1,4 +1,4 @@
-// CCT/SEXA continuous reader: 6,215 pages, lazily loaded in small PDF chunks with PDF.js.
+// CCT/SEXA continuous reader: sixteen volumes (6,409 PDF pages; 6,215 dissertation pages), lazily loaded in small PDF chunks with PDF.js.
 const D = JSON.parse(document.getElementById('r-data').textContent);
 const V = document.getElementById('viewer');
 const $ = id => document.getElementById(id);
