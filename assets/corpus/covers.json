@@ -3,7 +3,7 @@
   "cover_base": "assets/corpus/covers/{book_key}.webp",
   "swap": "To use later books_with_covers/previews, copy those files over site_preview/covers and assets/corpus/covers, or change cover_base. Download links stay out of the public page until a public URL exists (private repo links will not be published).",
   "target_height_px": 1800,
-  "n": 57,
+  "n": 55,
   "covers": [
     {
       "book_key": "W001-A",
@@ -349,36 +349,6 @@
       "web_path": "assets/corpus/covers/W021.webp",
       "web_path_jpg": "assets/corpus/covers/W021.jpg",
       "download_pdf": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/W021_A-Dimensional-Cascade-Model-of-Gravity-in-the-SE_book_with_cover.pdf"
-    },
-    {
-      "book_key": "W022",
-      "work_class": "paper",
-      "source": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/previews/W022_Tri-Channeling-Subquantum-Retroreflection-Toward_book_with_cover_p1.jpg",
-      "how": "books_with_covers/previews (W022_Tri-Channeling-Subquantum-Retroreflection-Toward_book_with_cover_p1.jpg)",
-      "webp": "/workspace/absolute_sexa_math_corpus/_editions/site_preview/covers/W022.webp",
-      "jpg": "/workspace/absolute_sexa_math_corpus/_editions/site_preview/covers/W022.jpg",
-      "width": 1392,
-      "height": 1800,
-      "webp_bytes": 118332,
-      "jpg_bytes": 234554,
-      "web_path": "assets/corpus/covers/W022.webp",
-      "web_path_jpg": "assets/corpus/covers/W022.jpg",
-      "download_pdf": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/W022_Tri-Channeling-Subquantum-Retroreflection-Toward_book_with_cover.pdf"
-    },
-    {
-      "book_key": "W023",
-      "work_class": "paper",
-      "source": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/previews/W023_Tri-Channeling-Subquantum-Retroreflection-Toward_book_with_cover_p1.jpg",
-      "how": "books_with_covers/previews (W023_Tri-Channeling-Subquantum-Retroreflection-Toward_book_with_cover_p1.jpg)",
-      "webp": "/workspace/absolute_sexa_math_corpus/_editions/site_preview/covers/W023.webp",
-      "jpg": "/workspace/absolute_sexa_math_corpus/_editions/site_preview/covers/W023.jpg",
-      "width": 1392,
-      "height": 1800,
-      "webp_bytes": 131492,
-      "jpg_bytes": 250730,
-      "web_path": "assets/corpus/covers/W023.webp",
-      "web_path_jpg": "assets/corpus/covers/W023.jpg",
-      "download_pdf": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/W023_Tri-Channeling-Subquantum-Retroreflection-Toward_book_with_cover.pdf"
     },
     {
       "book_key": "W024",
