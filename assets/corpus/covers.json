@@ -3,7 +3,7 @@
   "cover_base": "assets/corpus/covers/{book_key}.webp",
   "swap": "To use later books_with_covers/previews, copy those files over site_preview/covers and assets/corpus/covers, or change cover_base. Download links stay out of the public page until a public URL exists (private repo links will not be published).",
   "target_height_px": 1800,
-  "n": 53,
+  "n": 50,
   "covers": [
     {
       "book_key": "W001-A",
@@ -231,21 +231,6 @@
       "download_pdf": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/W013_A-Nine-Dimensional-Recursive-Admissibility-Energ_book_with_cover.pdf"
     },
     {
-      "book_key": "W014",
-      "work_class": "paper",
-      "source": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/previews/W014_Formal-Verification-of-Gated-Quaternion-Routing_book_with_cover_p1.jpg",
-      "how": "books_with_covers/previews (W014_Formal-Verification-of-Gated-Quaternion-Routing_book_with_cover_p1.jpg)",
-      "webp": "/workspace/absolute_sexa_math_corpus/_editions/site_preview/covers/W014.webp",
-      "jpg": "/workspace/absolute_sexa_math_corpus/_editions/site_preview/covers/W014.jpg",
-      "width": 1392,
-      "height": 1800,
-      "webp_bytes": 103892,
-      "jpg_bytes": 214785,
-      "web_path": "assets/corpus/covers/W014.webp",
-      "web_path_jpg": "assets/corpus/covers/W014.jpg",
-      "download_pdf": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/W014_Formal-Verification-of-Gated-Quaternion-Routing_book_with_cover.pdf"
-    },
-    {
       "book_key": "W015",
       "work_class": "paper",
       "source": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/previews/W015_Hardware-Verifiable-Recursive-Admissibility-for_book_with_cover_p1.jpg",
@@ -261,21 +246,6 @@
       "download_pdf": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/W015_Hardware-Verifiable-Recursive-Admissibility-for_book_with_cover.pdf"
     },
     {
-      "book_key": "W017",
-      "work_class": "paper",
-      "source": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/previews/W017_Hardware-Verifiable-Recursive-Admissibility-for_book_with_cover_p1.jpg",
-      "how": "books_with_covers/previews (W017_Hardware-Verifiable-Recursive-Admissibility-for_book_with_cover_p1.jpg)",
-      "webp": "/workspace/absolute_sexa_math_corpus/_editions/site_preview/covers/W017.webp",
-      "jpg": "/workspace/absolute_sexa_math_corpus/_editions/site_preview/covers/W017.jpg",
-      "width": 1392,
-      "height": 1800,
-      "webp_bytes": 107592,
-      "jpg_bytes": 219215,
-      "web_path": "assets/corpus/covers/W017.webp",
-      "web_path_jpg": "assets/corpus/covers/W017.jpg",
-      "download_pdf": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/W017_Hardware-Verifiable-Recursive-Admissibility-for_book_with_cover.pdf"
-    },
-    {
       "book_key": "W018",
       "work_class": "paper",
       "source": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/previews/W018_Hardware-Verifiable-Recursive-Admissibility-for_book_with_cover_p1.jpg",
@@ -289,21 +259,6 @@
       "web_path": "assets/corpus/covers/W018.webp",
       "web_path_jpg": "assets/corpus/covers/W018.jpg",
       "download_pdf": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/W018_Hardware-Verifiable-Recursive-Admissibility-for_book_with_cover.pdf"
-    },
-    {
-      "book_key": "W019",
-      "work_class": "paper",
-      "source": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/previews/W019_Hardware-Verifiable-Recursive-Information-Admiss_book_with_cover_p1.jpg",
-      "how": "books_with_covers/previews (W019_Hardware-Verifiable-Recursive-Information-Admiss_book_with_cover_p1.jpg)",
-      "webp": "/workspace/absolute_sexa_math_corpus/_editions/site_preview/covers/W019.webp",
-      "jpg": "/workspace/absolute_sexa_math_corpus/_editions/site_preview/covers/W019.jpg",
-      "width": 1273,
-      "height": 1800,
-      "webp_bytes": 126030,
-      "jpg_bytes": 234001,
-      "web_path": "assets/corpus/covers/W019.webp",
-      "web_path_jpg": "assets/corpus/covers/W019.jpg",
-      "download_pdf": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/W019_Hardware-Verifiable-Recursive-Information-Admiss_book_with_cover.pdf"
     },
     {
       "book_key": "W020",
