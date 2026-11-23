@@ -3,7 +3,7 @@
   "cover_base": "assets/corpus/covers/{book_key}.webp",
   "swap": "To use later books_with_covers/previews, copy those files over site_preview/covers and assets/corpus/covers, or change cover_base. Download links stay out of the public page until a public URL exists (private repo links will not be published).",
   "target_height_px": 1800,
-  "n": 54,
+  "n": 53,
   "covers": [
     {
       "book_key": "W001-A",
@@ -499,21 +499,6 @@
       "web_path": "assets/corpus/covers/W056.webp",
       "web_path_jpg": "assets/corpus/covers/W056.jpg",
       "download_pdf": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/W056_A-Recursive-Dimensional-Cascade-Model-of-Gravity_book_with_cover.pdf"
-    },
-    {
-      "book_key": "W057",
-      "work_class": "paper",
-      "source": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/previews/W057_A-Merged-Four-Sector-SREF-Exciternion-Functional_book_with_cover_p1.jpg",
-      "how": "books_with_covers/previews (W057_A-Merged-Four-Sector-SREF-Exciternion-Functional_book_with_cover_p1.jpg)",
-      "webp": "/workspace/absolute_sexa_math_corpus/_editions/site_preview/covers/W057.webp",
-      "jpg": "/workspace/absolute_sexa_math_corpus/_editions/site_preview/covers/W057.jpg",
-      "width": 1274,
-      "height": 1800,
-      "webp_bytes": 92476,
-      "jpg_bytes": 189578,
-      "web_path": "assets/corpus/covers/W057.webp",
-      "web_path_jpg": "assets/corpus/covers/W057.jpg",
-      "download_pdf": "/workspace/absolute_sexa_math_corpus/_editions/books_with_covers/W057_A-Merged-Four-Sector-SREF-Exciternion-Functional_book_with_cover.pdf"
     },
     {
       "book_key": "W058",
