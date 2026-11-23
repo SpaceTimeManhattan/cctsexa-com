@@ -73,9 +73,10 @@ let started = false;
 function start() { if (started) return; started = true; loadPdfjs(); pages.forEach(d => d && io.observe(d)); }
 
 // Position helpers (all pages share one size, so position is arithmetic).
-function stride() { return pages.length > 2 ? pages[2].offsetTop - pages[1].offsetTop : pages[1].offsetHeight; }
+// Average stride over the whole document: per-page offsets are rounded to whole pixels, so a two-page stride drifts over thousands of pages.
+function stride() { return pages.length > 2 ? (pages[TOTAL].offsetTop - pages[1].offsetTop) / (TOTAL - 1) : pages[1].offsetHeight; }
 function curPage() { const s = stride(); return Math.max(1, Math.min(TOTAL, Math.floor((V.scrollTop - pages[1].offsetTop + s * 0.35) / s) + 1)); }
-function goto(p, smooth) { p = Math.max(1, Math.min(TOTAL, p | 0)); start(); V.scrollTo({ top: pages[1].offsetTop + (p - 1) * stride() - 12, behavior: smooth ? 'smooth' : 'auto' }); update(p); }
+function goto(p, smooth) { p = Math.max(1, Math.min(TOTAL, p | 0)); start(); V.scrollTo({ top: pages[p].offsetTop - 12, behavior: smooth ? 'smooth' : 'auto' }); update(p); }
 let lastBook = -1;
 function update(p) {
   p = p || curPage(); if (document.activeElement !== inp) inp.value = p;
