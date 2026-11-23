@@ -44,6 +44,12 @@ h1{margin:0;font-weight:500;font-size:46px;line-height:1.1;letter-spacing:.02em;
 .cta{display:block;text-align:center;background:var(--gold);color:var(--navy);font:700 16px var(--sans);letter-spacing:.03em;text-decoration:none;padding:15px 18px;border-radius:3px;margin:18px 0 6px}
 .cta.alt{background:transparent;color:var(--navy);border:1px solid var(--gold)}
 .hero .cta{margin:22px 16px 0}
+.site-jump{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 20px;padding:11px 16px;background:var(--navy);border-bottom:1px solid var(--gold);font:600 13px/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase}
+.site-jump a{color:var(--goldl);text-decoration:none}
+.site-jump a:hover{color:#fff}
+.hero-more{margin:14px 16px 0;font:15px/1.4 var(--serif)}
+.hero-more a{color:var(--goldl);text-decoration-color:rgba(184,146,74,.55)}
+
 .img{width:100%;height:auto;display:block;border:1px solid var(--gold);background:#1a120c}
 .cap{font-size:13px;font-style:italic;color:var(--grey);text-align:right;margin:4px 0 18px}
 .vid{padding-top:34px}
@@ -119,7 +125,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <h1>CCT/SEXA</h1>
 <p class="sub">The Architecture of Recursive Admissibility</p>
 <p class="fw">First Wave Edition: the first printing, beginning with a single complete set, printed to order</p>
-</div><a class="cta" href="#order">Order a set</a></header>
+</div><a class="cta" href="#order">Order a set</a><p class="hero-more"><a href="#corpus">The SEXA Corpus, including the CERN-ban works</a></p></header>
+<nav class="site-jump" aria-label="On this page"><a href="#set">The set</a><a href="#read">Read</a><a href="#prices">Prices</a><a href="#order">Order</a><a href="#corpus">The SEXA Corpus</a></nav>
 <div class="thumb-banner">
 <a href="#order"><img src="assets/img/cct_sexa_thumb_banner.jpg" width="1280" height="720" alt="CCT/SEXA Dissertation, 14 books, now shipping" decoding="async"></a>
 </div>
@@ -470,12 +477,43 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 .cbook .coming{font:600 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:8px 0 0}
 #corpus .cta{margin-top:8px}
 @media (min-width:820px){#corpus .corpus-col{padding:0}}
+
+#corpus .set-portrait{margin:4px 0 8px}
+#corpus .set-portrait img{width:100%;height:auto;display:block;border:1px solid var(--gold);background:#080d1c}
+#corpus .set-portrait .cap{text-align:right;margin:4px 0 22px}
+.cbook .status{font:600 13px/1.4 var(--sans);color:var(--navy);margin:0 0 8px}
+.cbook .cern,.cern-card .cern{font:16px/1.4 var(--serif);font-style:italic;color:var(--navy);border-left:3px solid var(--gold);padding:4px 0 4px 12px;margin:0 0 12px}
+.cbook .fw-note{font:14px/1.45 var(--serif);font-style:italic;color:var(--grey);margin:8px 0 10px}
+#corpus .cbook .cta{display:inline-block;margin:10px 0 8px;padding:11px 18px;font-size:14px}
+.cern-band{margin:8px 0 36px}
+.cern-grid{display:grid;grid-template-columns:1fr;gap:0}
+@media (min-width:720px){.cern-grid{grid-template-columns:1fr 1fr;gap:0 28px}}
+.cern-card{display:grid;grid-template-columns:92px 1fr;gap:12px 14px;align-items:start;padding:16px 0;border-bottom:1px solid var(--rule)}
+.cern-card .cover{width:92px;height:auto;display:block;border:1px solid var(--gold);background:#1a120c}
+.cern-card .wid{display:block;font:700 11px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin:0 0 4px}
+.cern-card h4{font:600 17px/1.3 var(--serif);color:var(--navy);margin:0 0 4px}
+.cern-card h4 a{text-decoration:none;color:var(--navy)}
+.cern-card .by{font-size:14px;margin:0 0 6px}
+.cern-card .status{font:600 12px/1.4 var(--sans);color:var(--navy);margin:0 0 6px}
+.cern-card .cta{display:inline-block;margin:6px 0 0;padding:8px 14px;font-size:13px}
+.cern-card .coming{font:600 11px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin:6px 0 0}
+
 </style>
 <div class="corpus-col">
 <h2>The SEXA Corpus</h2>
-<p class="lead">The SEXA Corpus is issued as a set of books: each of the 30 papers is one book. W001 and W005 are each in two volumes, so the paper set is 32 volumes. The 14-book CCT/SEXA dissertation is bound as 16 volumes (Books IX and XIV in two parts each). Published by U.F.S. (Unified Field Systems LLC).</p>
-<p class="small">The figures below are suggested list prices for a forthcoming print edition, in US dollars, without shipping or tax. They are not an order form, and they are not the First Wave Edition prices for the dissertation, which appear under Retail prices above. A black-and-white printing would render the color seals and marks in gray; the full-color edition matches the files. Print edition — coming soon.</p>
+<figure class="set-portrait" id="corpus-portrait">
+<picture>
+<source type="image/webp" srcset="assets/corpus/sets/corpus_all_covers-800.webp 800w, assets/corpus/sets/corpus_all_covers-1600.webp 1600w, assets/corpus/sets/corpus_all_covers-2400.webp 2400w">
+<img src="assets/corpus/sets/corpus_all_covers-1600.jpg" srcset="assets/corpus/sets/corpus_all_covers-800.jpg 800w, assets/corpus/sets/corpus_all_covers-1600.jpg 1600w, assets/corpus/sets/corpus_all_covers-2400.jpg 2400w" sizes="(min-width:820px) 820px, 100vw" width="1600" height="1688" alt="All forty-eight volumes of the SEXA Corpus: the thirty papers in thirty-two volumes, and the fourteen-book CCT/SEXA dissertation in sixteen volumes" decoding="async">
+</picture>
+<p class="cap">The SEXA Corpus: every book in the present catalog</p>
+</figure>
+<p class="lead">The SEXA Corpus is issued as a set of books: each of the 30 papers is one book. W001 and W005 are each in two volumes, so the paper set is 32 volumes. The 14-book CCT/SEXA dissertation is bound as 16 volumes (Books IX and XIV in two parts each). Published by U.F.S. (Unified Field Systems LLC). The CERN-ban works are included, and are offered for First Wave order where they are released.</p>
+<aside class="ninth isbn" id="corpus-isbn-note"><p class="k">First Wave Edition — printed to order</p><p>First Wave print copies are made to order and are issued without ISBNs. When the ISBN editions are released, every First Wave buyer will receive an additional ISBN copy of each book purchased at no charge; you pay only shipping. In return, the original First Wave copy is to be dedicated to a library or to an industrious student.</p></aside>
+<p class="small">Prices are in US dollars, without shipping or tax. A black-and-white printing would render the color seals and marks in gray; the full-color edition matches the files. The dissertation volumes may also be ordered in the First Wave Edition at the prices under <a href="#prices">Retail prices</a> above. Works still under review or unreleased are listed for the catalog only and are not offered for order.</p>
 <nav class="jump" aria-label="SEXA Corpus">
+<a href="#corpus-portrait">All the covers</a>
+<a href="#corpus-cern">CERN-ban works</a>
 <a href="#corpus-set-papers">30-paper set</a>
 <a href="#corpus-set-both">Set with the dissertation</a>
 <a href="#corpus-set-diss">Dissertation set</a>
@@ -485,61 +523,184 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <div class="sets" id="corpus-set-papers">
 <h3 class="group">The complete 30-paper set</h3>
 <p>32 volumes, 3,825 pages, 8.5 × 11 in. Boxed-set prices are 10% off the sum of the per-book list prices.</p>
+<p class="small">The complete 30-paper set includes works still under review or unreleased, so it is not offered as a single order yet. You may inquire, or order the individual books that are released below. The figures are catalog list prices.</p>
 <div class="price"><h3>30-paper set, softbound</h3>
 <p class="d">32 volumes, 3,825 pages, paperback</p>
 <div class="row"><span>Boxed set (10% off)</span><b>$538.99</b></div>
 <div class="row"><span>Sum of list prices</span><span class="lp">$598.68</span></div>
 <div class="row"><span>Full-color edition, boxed (10% off)</span><span class="lp">$680.99</span></div>
 <div class="row"><span>Full-color edition, sum</span><span class="lp">$755.68</span></div>
-<div class="soon">Print edition — coming soon</div></div>
+<div class="soon">Complete set — inquire, or order released books below</div></div>
 <div class="price"><h3>30-paper set, hardbound</h3>
 <p class="d">32 volumes, 3,825 pages, case-laminate hardcover</p>
 <div class="row"><span>Boxed set (10% off)</span><b>$1,144.99</b></div>
 <div class="row"><span>Sum of list prices</span><span class="lp">$1,271.68</span></div>
 <div class="row"><span>Full-color edition, boxed (10% off)</span><span class="lp">$1,301.99</span></div>
 <div class="row"><span>Full-color edition, sum</span><span class="lp">$1,445.68</span></div>
-<div class="soon">Print edition — coming soon</div></div>
+<div class="soon">Complete set — inquire, or order released books below</div></div>
 </div>
 <div class="sets" id="corpus-set-both">
 <h3 class="group">The complete set with the dissertation</h3>
 <p>48 volumes, 10,234 pages: the 32 paper volumes plus the 16 verified dissertation volumes (6,409 pages).</p>
+<p class="small">The complete set with the dissertation includes works still under review or unreleased, so it is not offered as a single order yet. You may inquire, or order released books individually. Dissertation volumes may be ordered in the First Wave Edition at the prices under Retail prices above.</p>
 <div class="price"><h3>Papers and dissertation, softbound</h3>
 <p class="d">48 volumes, 10,234 pages, paperback</p>
 <div class="row"><span>Boxed set (10% off)</span><b>$1,178.99</b></div>
 <div class="row"><span>Sum of list prices</span><span class="lp">$1,309.52</span></div>
 <div class="row"><span>Full-color edition, boxed (10% off)</span><span class="lp">$1,579.99</span></div>
 <div class="row"><span>Full-color edition, sum</span><span class="lp">$1,754.52</span></div>
-<div class="soon">Print edition — coming soon</div></div>
+<div class="soon">Complete set — inquire, or order released books below</div></div>
 <div class="price"><h3>Papers and dissertation, hardbound</h3>
 <p class="d">48 volumes, 10,234 pages, case-laminate hardcover</p>
 <div class="row"><span>Boxed set (10% off)</span><b>$2,102.99</b></div>
 <div class="row"><span>Sum of list prices</span><span class="lp">$2,336.52</span></div>
 <div class="row"><span>Full-color edition, boxed (10% off)</span><span class="lp">$2,516.99</span></div>
 <div class="row"><span>Full-color edition, sum</span><span class="lp">$2,796.52</span></div>
-<div class="soon">Print edition — coming soon</div></div>
+<div class="soon">Complete set — inquire, or order released books below</div></div>
 </div>
 <div class="sets" id="corpus-set-diss">
 <h3 class="group">The dissertation set</h3>
-<p>16 volumes, 6,409 pages — the verified CCT/SEXA print edition of 23 November 2026. These are suggested catalog list prices at 8.5 × 11 in, the trim of that edition. They are not the First Wave Edition prices listed under Retail prices above.</p>
+<p>16 volumes, 6,409 pages — the verified CCT/SEXA print edition of 23 November 2026. These are catalog list prices at 8.5 × 11 in, the trim of that edition. They are not the First Wave Edition prices listed under Retail prices above.</p>
+<p class="small">To order the dissertation as a set, use the First Wave Edition prices and the order form under <a href="#prices">Retail prices</a> and <a href="#order">How to Order</a>. The figures in this block are catalog list prices only, and are not an order form.</p>
 <div class="price"><h3>Dissertation set, softbound</h3>
 <p class="d">16 volumes, 6,409 pages, paperback</p>
 <div class="row"><span>Boxed set (10% off)</span><b>$639.99</b></div>
 <div class="row"><span>Sum of list prices</span><span class="lp">$710.84</span></div>
 <div class="row"><span>Full-color edition, boxed (10% off)</span><span class="lp">$898.99</span></div>
 <div class="row"><span>Full-color edition, sum</span><span class="lp">$998.84</span></div>
-<div class="soon">Print edition — coming soon</div></div>
+<div class="soon">Order the First Wave Edition above</div></div>
 <div class="price"><h3>Dissertation set, hardbound</h3>
 <p class="d">16 volumes, 6,409 pages, case-laminate hardcover</p>
 <div class="row"><span>Boxed set (10% off)</span><b>$958.99</b></div>
 <div class="row"><span>Sum of list prices</span><span class="lp">$1,064.84</span></div>
 <div class="row"><span>Full-color edition, boxed (10% off)</span><span class="lp">$1,215.99</span></div>
 <div class="row"><span>Full-color edition, sum</span><span class="lp">$1,350.84</span></div>
-<div class="soon">Print edition — coming soon</div></div>
+<div class="soon">Order the First Wave Edition above</div></div>
 </div>
 <p><a class="cta alt" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20print%20edition%20inquiry&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20inquire%20about%20the%20SEXA%20Corpus%20print%20edition.%0A%0ASet%20or%20book%3A%20%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0A%0AName%3A%20%0A%0AThank%20you%2C%0A">Inquire about the print edition</a></p>
 <p class="small" style="text-align:center">Opens an email to U.F.S. Nothing is charged from this page.</p>
+<div class="cern-band" id="corpus-cern">
+<h3 class="group">CERN-ban works</h3>
+<p>These works were removed from Zenodo on 4 August 2026. Where a Zenodo DOI was issued, it is printed on the edition; it no longer resolves. Author currently under CERN ban. Released titles may be ordered as First Wave print copies, made to order and issued without ISBNs. Works still under review, unreleased, or issued only as a compilation are listed here but are not offered for order.</p>
+<div class="cern-grid">
+<article class="cern-card" id="cern-W011">
+<a href="#corpus-W011"><img class="cover" src="assets/corpus/covers/W011.jpg" srcset="assets/corpus/covers/W011.webp" width="1392" height="1800" alt="Front cover of W011" loading="lazy" decoding="async"></a>
+<div>
+<p class="wid">W011</p>
+<h4><a href="#corpus-W011">A Recursive Closure Criterion for a Theory of Everything: A 60-Glyph Quaternionic Inter-Domain Syllogistic Admissibility ≡ Prime Atom of Logic</a></h4>
+<p class="by">Jered McClain</p>
+<p class="cern">Author currently under CERN ban</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W011&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W011%20%E2%80%94%20A%20Recursive%20Closure%20Criterion%20for%20a%20Theory%20of%20Everything%3A%20A%2060-Glyph%20Quaternionic%20Inter-Domain%20Syllogistic%20Admissibility%20%E2%89%A1%20Prime%20Atom%20of%20Logic%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
+</div>
+</article>
+<article class="cern-card" id="cern-W039">
+<a href="#corpus-W039"><img class="cover" src="assets/corpus/covers/W039.jpg" srcset="assets/corpus/covers/W039.webp" width="1392" height="1800" alt="Front cover of W039" loading="lazy" decoding="async"></a>
+<div>
+<p class="wid">W039</p>
+<h4><a href="#corpus-W039">Unified Recursive Manifold Dynamics, Dimensional Collapse Operators, and Triality-Structured Exciter Geometry — MASTER PEER REVIEW EDITION</a></h4>
+<p class="by">Jered McClain</p>
+<p class="cern">Author currently under CERN ban</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W039&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W039%20%E2%80%94%20Unified%20Recursive%20Manifold%20Dynamics%2C%20Dimensional%20Collapse%20Operators%2C%20and%20Triality-Structured%20Exciter%20Geometry%20%E2%80%94%20MASTER%20PEER%20REVIEW%20EDITION%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
+</div>
+</article>
+<article class="cern-card" id="cern-W044">
+<a href="#corpus-W044"><img class="cover" src="assets/corpus/covers/W044.jpg" srcset="assets/corpus/covers/W044.webp" width="1392" height="1800" alt="Front cover of W044" loading="lazy" decoding="async"></a>
+<div>
+<p class="wid">W044</p>
+<h4><a href="#corpus-W044">The AMN Authority Tensor: Quaternionic Admissibility Enforcement, Glyph-Operator Constraint, and Planetary Closure in the SEXA Framework</a></h4>
+<p class="by">Jered McClain; Erydir Ceisiwr</p>
+<p class="cern">Author currently under CERN ban</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W044&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W044%20%E2%80%94%20The%20AMN%20Authority%20Tensor%3A%20Quaternionic%20Admissibility%20Enforcement%2C%20Glyph-Operator%20Constraint%2C%20and%20Planetary%20Closure%20in%20the%20SEXA%20Framework%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
+</div>
+</article>
+<article class="cern-card" id="cern-W045">
+<a href="#corpus-W045"><img class="cover" src="assets/corpus/covers/W045.jpg" srcset="assets/corpus/covers/W045.webp" width="1392" height="1800" alt="Front cover of W045" loading="lazy" decoding="async"></a>
+<div>
+<p class="wid">W045</p>
+<h4><a href="#corpus-W045">Anti-Direct Short: A Negentropic Circuit Topology for Source-Dipole Preservation and Load-Loss Recollection via Diakoptic Back-Feed</a></h4>
+<p class="by">Jered McClain</p>
+<p class="cern">Author currently under CERN ban</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W045&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W045%20%E2%80%94%20Anti-Direct%20Short%3A%20A%20Negentropic%20Circuit%20Topology%20for%20Source-Dipole%20Preservation%20and%20Load-Loss%20Recollection%20via%20Diakoptic%20Back-Feed%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
+</div>
+</article>
+<article class="cern-card" id="cern-W046">
+<a href="#corpus-W046"><img class="cover" src="assets/corpus/covers/W046.jpg" srcset="assets/corpus/covers/W046.webp" width="1392" height="1800" alt="Front cover of W046" loading="lazy" decoding="async"></a>
+<div>
+<p class="wid">W046</p>
+<h4><a href="#corpus-W046">Joey Rubin’s Kinetic Blueprinting, the 1-D Visibility Threshold, and SEXA MATH Real-Time Imagery Across 5–2880D</a></h4>
+<p class="by">Jered McClain</p>
+<p class="cern">Author currently under CERN ban</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W046&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W046%20%E2%80%94%20Joey%20Rubin%E2%80%99s%20Kinetic%20Blueprinting%2C%20the%201-D%20Visibility%20Threshold%2C%20and%20SEXA%20MATH%20Real-Time%20Imagery%20Across%205%E2%80%932880D%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
+</div>
+</article>
+<article class="cern-card" id="cern-W048">
+<a href="#corpus-W048"><img class="cover" src="assets/corpus/covers/W048.jpg" srcset="assets/corpus/covers/W048.webp" width="1392" height="1800" alt="Front cover of W048" loading="lazy" decoding="async"></a>
+<div>
+<p class="wid">W048</p>
+<h4><a href="#corpus-W048">Lightning as a Quantum Vacuum Plasma Fracture Rather Than Propagation — A SEXA-Based Challenge to Geodesic Intuition, Thermodynamic Locality, and Mid-Air Lightning Termination (ZeroReactor)</a></h4>
+<p class="by">Jered McClain</p>
+<p class="cern">Author currently under CERN ban</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W048&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W048%20%E2%80%94%20Lightning%20as%20a%20Quantum%20Vacuum%20Plasma%20Fracture%20Rather%20Than%20Propagation%20%E2%80%94%20A%20SEXA-Based%20Challenge%20to%20Geodesic%20Intuition%2C%20Thermodynamic%20Locality%2C%20and%20Mid-Air%20Lightning%20Termination%20%28ZeroReactor%29%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
+</div>
+</article>
+<article class="cern-card" id="cern-W049">
+<a href="#corpus-W049"><img class="cover" src="assets/corpus/covers/W049.jpg" srcset="assets/corpus/covers/W049.webp" width="1392" height="1800" alt="Front cover of W049" loading="lazy" decoding="async"></a>
+<div>
+<p class="wid">W049</p>
+<h4><a href="#corpus-W049">SEXA: An Axiomatic Closure Framework for Recursive Manifold Physics — Exciternion Evaluation, Dimensional Collapse, and Cross-Domain Constructability</a></h4>
+<p class="by">Jered McClain</p>
+<p class="cern">Author currently under CERN ban</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W049&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W049%20%E2%80%94%20SEXA%3A%20An%20Axiomatic%20Closure%20Framework%20for%20Recursive%20Manifold%20Physics%20%E2%80%94%20Exciternion%20Evaluation%2C%20Dimensional%20Collapse%2C%20and%20Cross-Domain%20Constructability%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
+</div>
+</article>
+<article class="cern-card" id="cern-W024">
+<a href="#corpus-W024"><img class="cover" src="assets/corpus/covers/W024.jpg" srcset="assets/corpus/covers/W024.webp" width="1392" height="1800" alt="Front cover of W024" loading="lazy" decoding="async"></a>
+<div>
+<p class="wid">W024</p>
+<h4><a href="#corpus-W024">The Γ-Subthreshold Fold Logic Theorem: Minimal Admissibility Compression, Recursive Information Preservation, and Unique Reconstruction Across the 2880-Dimensional Recursive Hierarchy</a></h4>
+<p class="by">Jered McClain; Erydir Ceisiwr</p>
+<p class="status">Under peer review · Journal of Advances in Mathematics</p>
+<p class="cern">Author currently under CERN ban</p>
+<p class="coming">Not yet for sale — under peer review</p>
+</div>
+</article>
+<article class="cern-card" id="cern-W042">
+<a href="#corpus-W042"><img class="cover" src="assets/corpus/covers/W042.jpg" srcset="assets/corpus/covers/W042.webp" width="1392" height="1800" alt="Front cover of W042" loading="lazy" decoding="async"></a>
+<div>
+<p class="wid">W042</p>
+<h4><a href="#corpus-W042">The Last Constant: A Theorem-Grade Formalization of Recursive Propagation, Higher-Dimensional Transport, Recursive Admissibility, Computational Correspondence, Dimensional Closure, and Relativistic Horizon Structure Within the SEXA Unified Field Framework</a></h4>
+<p class="by">Jered McClain; Erydir Ceisiwr</p>
+<p class="status">Under peer review · Journal of Advances in Mathematics</p>
+<p class="cern">Author currently under CERN ban</p>
+<p class="coming">Not yet for sale — under peer review</p>
+</div>
+</article>
+<article class="cern-card" id="cern-W047">
+<a href="#corpus-W047"><img class="cover" src="assets/corpus/covers/W047.jpg" srcset="assets/corpus/covers/W047.webp" width="1392" height="1800" alt="Front cover of W047" loading="lazy" decoding="async"></a>
+<div>
+<p class="wid">W047</p>
+<h4><a href="#corpus-W047">Artificial Rest: A High-Dimensional Restorative Regime Derived from the SEXA Unified Field Theory</a></h4>
+<p class="by">Jered McClain</p>
+<p class="status">Unreleased</p>
+<p class="cern">Author currently under CERN ban</p>
+<p class="coming">Not for sale</p>
+</div>
+</article>
+<article class="cern-card" id="cern-W069">
+<a href="#corpus-W069"><img class="cover" src="assets/corpus/covers/W069.jpg" srcset="assets/corpus/covers/W069.webp" width="1392" height="1800" alt="Front cover of W069" loading="lazy" decoding="async"></a>
+<div>
+<p class="wid">W069</p>
+<h4><a href="#corpus-W069">SEXA Unified Field Theory: The Structured Survivability Audit; Formal Compatibility and Falsifiability Assessment of the SEXA Unified Field Model; and CCT/SEXA ↔ SIGMATICS Correspondence, Proven Through Computational Analysis</a></h4>
+<p class="by">Jered McClain; Erydir Ceisiwr</p>
+<p class="status">Compilation volume</p>
+<p class="cern">Author currently under CERN ban</p>
+<p class="coming">Compilation volume — inquire</p>
+</div>
+</article>
+</div>
+</div>
 <h3 class="group" id="corpus-papers">Each paper</h3>
-<p class="small">Each book is shown with a large preview of its front cover. List prices only. Print edition — coming soon.</p>
+<p class="small">Each book is shown with a large preview of its front cover. Books offered for order are First Wave print copies, made to order and issued without ISBNs. Works under review or unreleased are listed for the catalog only.</p>
 <article class="cbook" id="corpus-W001-A">
 <figure>
 <picture>
@@ -557,7 +718,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$104.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$126.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">First Wave Edition: printed to order, issued without an ISBN. When the ISBN editions are released, you will receive an additional ISBN copy (you pay only shipping). The original copy is to be dedicated to a library or to an industrious student.</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W001-A&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W001-A%20%E2%80%94%20THE%20SEXA%20CRITICAL-LINE%20CLOSURE%20THEOREM%3A%20Recursive%20Admissibility%2C%20Spectral%20Correspondence%2C%20the%20Riemann%20Hypothesis%2C%20and%20the%20Eradication%20of%20the%20Zeta-Zero%20Randomness%20and%20Random-Matrix%20Paradigms%20%E2%80%94%20Volume%20A%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W001_THE-SEXA-CRITICAL-LINE-CLOSURE-THEOREM-Recursive_Vol-A_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W001-B">
@@ -577,7 +739,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$104.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$126.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">First Wave Edition: printed to order, issued without an ISBN. When the ISBN editions are released, you will receive an additional ISBN copy (you pay only shipping). The original copy is to be dedicated to a library or to an industrious student.</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W001-B&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W001-B%20%E2%80%94%20THE%20SEXA%20CRITICAL-LINE%20CLOSURE%20THEOREM%3A%20Recursive%20Admissibility%2C%20Spectral%20Correspondence%2C%20the%20Riemann%20Hypothesis%2C%20and%20the%20Eradication%20of%20the%20Zeta-Zero%20Randomness%20and%20Random-Matrix%20Paradigms%20%E2%80%94%20Volume%20B%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W001_THE-SEXA-CRITICAL-LINE-CLOSURE-THEOREM-Recursive_Vol-B_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W002">
@@ -597,7 +760,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$19.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$41.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">First Wave Edition: printed to order, issued without an ISBN. When the ISBN editions are released, you will receive an additional ISBN copy (you pay only shipping). The original copy is to be dedicated to a library or to an industrious student.</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W002&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W002%20%E2%80%94%20Recursive%20Interdomain%20Computational%20Omni-Logic%20embedding%20Monster%E2%80%93Moonshine%20Constrained%20Admissibility%20Manifold%20Completeness%20across%20Density%2C%20Dimension%2C%20Field%2C%20Liquidity%2C%20and%20Recursive%20Resource%20Completeness%20for%20%CE%93-Gated%20Resource%20Flows%20%28RICOLMC-DDF%29%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W002_Recursive-Interdomain-Computational-Omni-Logic-e_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W003">
@@ -617,7 +781,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$9.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$30.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">First Wave Edition: printed to order, issued without an ISBN. When the ISBN editions are released, you will receive an additional ISBN copy (you pay only shipping). The original copy is to be dedicated to a library or to an industrious student.</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W003&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W003%20%E2%80%94%20One%20Test%20Every%20Theory%20of%20Everything%20Must%20Pass%3A%20Universal%20Recursive%20Closure%20and%20Final%20Synthesis%20%E2%80%94%20A%20U.F.S%20Addendum%3A%20A%2060-Glyph%20Quaternionic-to-HEXAD%20Intergalactic%20Telemetry%20Criterion%20%E2%89%A1%20Prime%20Atom%20of%20Logic%2C%20under%20RICOLMC-DDF%20%CE%93-Gated%20Resource%20Completeness%20and%20the%20CCT/SEXA%20Civilization%20Theorems%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W003_One-Test-Every-Theory-of-Everything-Must-Pass-Un_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W004">
@@ -637,7 +802,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$9.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$30.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">First Wave Edition: printed to order, issued without an ISBN. When the ISBN editions are released, you will receive an additional ISBN copy (you pay only shipping). The original copy is to be dedicated to a library or to an industrious student.</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W004&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W004%20%E2%80%94%20HEXAD%20Intercept%20Symmetry%E2%80%93Telemetry%20under%20RICOLMC-DDF%20%CE%93-Gated%20Resource%20Completeness%3A%20Upgrading%20the%20Last%20Constant%26%23x27%3Bs%20Quaternionic%20Expansion%20Equation%20to%20Six-Planet%20Tracking%20%E2%80%94%20A%20U.F.S%20Pre-Registration%20Locked%20Before%20the%20Data%20Arrive%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W004_HEXAD-Intercept-Symmetry-Telemetry-under-RICOLMC_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W005-A">
@@ -657,7 +823,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$104.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$126.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">First Wave Edition: printed to order, issued without an ISBN. When the ISBN editions are released, you will receive an additional ISBN copy (you pay only shipping). The original copy is to be dedicated to a library or to an industrious student.</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W005-A&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W005-A%20%E2%80%94%20THE%20SEXA%20BABY%20MOMMA%20TERMINAL%20INVARIANCE%2C%20PORTAL%20%26amp%3B%20TELEPORTATION%20THEOREM%3A%20A%20SAC%E2%80%93PAC%20Formalism%20for%20Higher-Dimensional%20Admissibility%20Transport%2C%20Geodesic%20Path%20Substitution%2C%20Distance-Decoupled%20Terminal%20Reconstruction%2C%20and%20Teleportation%20Across%20the%20M3%20%E2%8A%82%20M5%20%E2%8A%82%20M2880%20Recursive%20Manifold%20Architecture%20%E2%80%94%20Volume%20A%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W005_THE-SEXA-BABY-MOMMA-TERMINAL-INVARIANCE-PORTAL-T_Vol-A_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W005-B">
@@ -677,7 +844,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$104.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$126.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">First Wave Edition: printed to order, issued without an ISBN. When the ISBN editions are released, you will receive an additional ISBN copy (you pay only shipping). The original copy is to be dedicated to a library or to an industrious student.</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W005-B&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W005-B%20%E2%80%94%20THE%20SEXA%20BABY%20MOMMA%20TERMINAL%20INVARIANCE%2C%20PORTAL%20%26amp%3B%20TELEPORTATION%20THEOREM%3A%20A%20SAC%E2%80%93PAC%20Formalism%20for%20Higher-Dimensional%20Admissibility%20Transport%2C%20Geodesic%20Path%20Substitution%2C%20Distance-Decoupled%20Terminal%20Reconstruction%2C%20and%20Teleportation%20Across%20the%20M3%20%E2%8A%82%20M5%20%E2%8A%82%20M2880%20Recursive%20Manifold%20Architecture%20%E2%80%94%20Volume%20B%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W005_THE-SEXA-BABY-MOMMA-TERMINAL-INVARIANCE-PORTAL-T_Vol-B_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W006">
@@ -697,7 +865,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$12.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$34.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">First Wave Edition: printed to order, issued without an ISBN. When the ISBN editions are released, you will receive an additional ISBN copy (you pay only shipping). The original copy is to be dedicated to a library or to an industrious student.</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W006&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W006%20%E2%80%94%20SEXA%20Math%20as%20a%20Hilbert%20Space%3A%20Admissibility%20Gates%20as%20Orthogonal%20Projections%2C%20the%20Exciternion%20as%20a%20Bounded%20Operator%2C%20and%20HEXAD%20as%20a%20Six-Channel%20Tensor%20Frame%2C%20with%20a%20Machine-Verified%202880-Dimensional%20Model%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W006_SEXA-Math-as-a-Hilbert-Space-Admissibility-Gates_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W007">
@@ -717,7 +886,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$9.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$30.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">First Wave Edition: printed to order, issued without an ISBN. When the ISBN editions are released, you will receive an additional ISBN copy (you pay only shipping). The original copy is to be dedicated to a library or to an industrious student.</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W007&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W007%20%E2%80%94%20Recursive%20Soil%20Bearing%20Architecture%20%28RSBA%29%3A%20Synthetic%20Landmass%20Stabilization%20via%20Boundary-Induced%20Stress%20Decoupling%20Derived%20from%20the%20SEXA%20Recursive%20Energy%20Functional%20%28SREF%29%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W007_Recursive-Soil-Bearing-Architecture-RSBA-Synthet_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W008">
@@ -737,7 +907,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$9.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$30.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">First Wave Edition: printed to order, issued without an ISBN. When the ISBN editions are released, you will receive an additional ISBN copy (you pay only shipping). The original copy is to be dedicated to a library or to an industrious student.</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W008&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W008%20%E2%80%94%20A%20Monster-Symmetric%20Admissibility%20Formulation%20of%20the%20SEXA%20Unified%20Field%20Theory%3A%20Operator-Glyph%20Closure%2C%20%CE%A3%E2%82%86%E2%82%80%20Exciternion%20Logic%2C%20and%20Falsifiable%20Reduction%20to%20General%20Relativity%2C%20Quantum%20Field%20Theory%2C%20and%20Yukawa%20Interaction%20Regimes%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W008_A-Monster-Symmetric-Admissibility-Formulation-of_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W009">
@@ -757,7 +928,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$9.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$31.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">First Wave Edition: printed to order, issued without an ISBN. When the ISBN editions are released, you will receive an additional ISBN copy (you pay only shipping). The original copy is to be dedicated to a library or to an industrious student.</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W009&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W009%20%E2%80%94%20From%20Admissibility%20to%20Energy%3A%20A%20Full-Stack%20Formulation%20of%20the%20SEXA%20Unified%20Field%20Theory%20via%20%CE%93-Glyph%20Closure%2C%20SREF%20Dynamics%2C%20and%202880-Dimensional%20Exciternion%20Structure%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W009_From-Admissibility-to-Energy-A-Full-Stack-Formul_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W010">
@@ -777,7 +949,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$14.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$36.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">First Wave Edition: printed to order, issued without an ISBN. When the ISBN editions are released, you will receive an additional ISBN copy (you pay only shipping). The original copy is to be dedicated to a library or to an industrious student.</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W010&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W010%20%E2%80%94%20The%20Horizon%20Constant%20and%20Resolution%20Paradox%20%28%CE%A9%E2%82%82%E2%82%88%E2%82%88%E2%82%80%29%3A%20Recursive%20Discrete%20Geometry%2C%20Perceptual%20Continuity%2C%20and%20the%20Emergence%20of%20Curved%20Manifolds%20from%20Finite%20Structures%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W010_The-Horizon-Constant-and-Resolution-Paradox-Recu_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W011">
@@ -797,7 +970,9 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$14.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$36.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="cern">Author currently under CERN ban</p>
+<p class="fw-note">First Wave Edition: printed to order, issued without an ISBN. When the ISBN editions are released, you will receive an additional ISBN copy (you pay only shipping). The original copy is to be dedicated to a library or to an industrious student.</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W011&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W011%20%E2%80%94%20A%20Recursive%20Closure%20Criterion%20for%20a%20Theory%20of%20Everything%3A%20A%2060-Glyph%20Quaternionic%20Inter-Domain%20Syllogistic%20Admissibility%20%E2%89%A1%20Prime%20Atom%20of%20Logic%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W011_A-Recursive-Closure-Criterion-for-a-Theory-of-Ev_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W012">
@@ -817,7 +992,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$9.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$30.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">First Wave Edition: printed to order, issued without an ISBN. When the ISBN editions are released, you will receive an additional ISBN copy (you pay only shipping). The original copy is to be dedicated to a library or to an industrious student.</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W012&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W012%20%E2%80%94%20Hardware-Verifiable%20Recursive%20Computational%20Architecture%20Derived%20from%20the%20SEXA%20Unified%20Field%20Framework%3A%20Computational%20Correspondence%2C%20Recursive%20Admissibility%2C%20and%20Structured%20Validation%20Across%20a%202880-Dimensional%20Manifold%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W012_Hardware-Verifiable-Recursive-Computational-Arch_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W013">
@@ -837,7 +1013,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$9.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$30.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="status">Accepted for presentation only · ICMMAP-26</p>
+<p class="coming">Accepted for presentation only — not offered for order</p>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W013_A-Nine-Dimensional-Recursive-Admissibility-Energ_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W015">
@@ -857,7 +1034,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$9.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$30.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="status">Under review · SRSE 2027</p>
+<p class="coming">Not yet for sale — under review</p>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W015_Hardware-Verifiable-Recursive-Admissibility-for_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W018">
@@ -877,7 +1055,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$9.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$30.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">First Wave Edition: printed to order, issued without an ISBN. When the ISBN editions are released, you will receive an additional ISBN copy (you pay only shipping). The original copy is to be dedicated to a library or to an industrious student.</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W018&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W018%20%E2%80%94%20Hardware-Verifiable%20Recursive%20Admissibility%20for%20Autonomous%20Aerospace%20and%20Mechanical%20Systems%3A%20A%20SEXA%20Framework%20for%20Constraint-Safe%20State%20Selection%2C%20Fault%20Detection%2C%20Digital-Twin%20Reconstruction%2C%20Recursive%20Dimensional%20Compression%2C%20and%20Engineering-Grade%20Computational%20Validation%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W018_Hardware-Verifiable-Recursive-Admissibility-for_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W021">
@@ -897,7 +1076,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$9.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$30.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="status">Under review · Frontiers</p>
+<p class="coming">Not yet for sale — under review</p>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W021_A-Dimensional-Cascade-Model-of-Gravity-in-the-SE_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W024">
@@ -917,7 +1097,9 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$17.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$39.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="status">Under peer review · Journal of Advances in Mathematics</p>
+<p class="cern">Author currently under CERN ban</p>
+<p class="coming">Not yet for sale — under peer review</p>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W024_The-Subthreshold-Fold-Logic-Theorem-Minimal-Admi_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W039">
@@ -937,7 +1119,9 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$14.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$36.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="cern">Author currently under CERN ban</p>
+<p class="fw-note">First Wave Edition: printed to order, issued without an ISBN. When the ISBN editions are released, you will receive an additional ISBN copy (you pay only shipping). The original copy is to be dedicated to a library or to an industrious student.</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W039&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W039%20%E2%80%94%20Unified%20Recursive%20Manifold%20Dynamics%2C%20Dimensional%20Collapse%20Operators%2C%20and%20Triality-Structured%20Exciter%20Geometry%20%E2%80%94%20MASTER%20PEER%20REVIEW%20EDITION%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W039_Unified-Recursive-Manifold-Dynamics-Dimensional_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W042">
@@ -957,7 +1141,9 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$13.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$35.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="status">Under peer review · Journal of Advances in Mathematics</p>
+<p class="cern">Author currently under CERN ban</p>
+<p class="coming">Not yet for sale — under peer review</p>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W042_The-Last-Constant-A-Theorem-Grade-Formalization_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W044">
@@ -977,7 +1163,9 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$9.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$30.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="cern">Author currently under CERN ban</p>
+<p class="fw-note">First Wave Edition: printed to order, issued without an ISBN. When the ISBN editions are released, you will receive an additional ISBN copy (you pay only shipping). The original copy is to be dedicated to a library or to an industrious student.</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W044&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W044%20%E2%80%94%20The%20AMN%20Authority%20Tensor%3A%20Quaternionic%20Admissibility%20Enforcement%2C%20Glyph-Operator%20Constraint%2C%20and%20Planetary%20Closure%20in%20the%20SEXA%20Framework%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W044_The-AMN-Authority-Tensor-Quaternionic-Admissibil_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W045">
@@ -997,7 +1185,9 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$12.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$34.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="cern">Author currently under CERN ban</p>
+<p class="fw-note">First Wave Edition: printed to order, issued without an ISBN. When the ISBN editions are released, you will receive an additional ISBN copy (you pay only shipping). The original copy is to be dedicated to a library or to an industrious student.</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W045&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W045%20%E2%80%94%20Anti-Direct%20Short%3A%20A%20Negentropic%20Circuit%20Topology%20for%20Source-Dipole%20Preservation%20and%20Load-Loss%20Recollection%20via%20Diakoptic%20Back-Feed%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W045_Anti-Direct-Short-A-Negentropic-Circuit-Topology_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W046">
@@ -1017,7 +1207,9 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$9.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$30.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="cern">Author currently under CERN ban</p>
+<p class="fw-note">First Wave Edition: printed to order, issued without an ISBN. When the ISBN editions are released, you will receive an additional ISBN copy (you pay only shipping). The original copy is to be dedicated to a library or to an industrious student.</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W046&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W046%20%E2%80%94%20Joey%20Rubin%E2%80%99s%20Kinetic%20Blueprinting%2C%20the%201-D%20Visibility%20Threshold%2C%20and%20SEXA%20MATH%20Real-Time%20Imagery%20Across%205%E2%80%932880D%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W046_Joey-Rubin-s-Kinetic-Blueprinting-the-1-D-Visibi_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W047">
@@ -1037,7 +1229,9 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$9.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$31.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="status">Unreleased</p>
+<p class="cern">Author currently under CERN ban</p>
+<p class="coming">Not for sale</p>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W047_Artificial-Rest-A-High-Dimensional-Restorative-R_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W048">
@@ -1057,7 +1251,9 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$11.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$33.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="cern">Author currently under CERN ban</p>
+<p class="fw-note">First Wave Edition: printed to order, issued without an ISBN. When the ISBN editions are released, you will receive an additional ISBN copy (you pay only shipping). The original copy is to be dedicated to a library or to an industrious student.</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W048&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W048%20%E2%80%94%20Lightning%20as%20a%20Quantum%20Vacuum%20Plasma%20Fracture%20Rather%20Than%20Propagation%20%E2%80%94%20A%20SEXA-Based%20Challenge%20to%20Geodesic%20Intuition%2C%20Thermodynamic%20Locality%2C%20and%20Mid-Air%20Lightning%20Termination%20%28ZeroReactor%29%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W048_Lightning-as-a-Quantum-Vacuum-Plasma-Fracture-Ra_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W049">
@@ -1077,7 +1273,9 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$9.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$30.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="cern">Author currently under CERN ban</p>
+<p class="fw-note">First Wave Edition: printed to order, issued without an ISBN. When the ISBN editions are released, you will receive an additional ISBN copy (you pay only shipping). The original copy is to be dedicated to a library or to an industrious student.</p>
+<a class="cta" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20First%20Wave%20Edition%3A%20order%20request%20%E2%80%94%20W049&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20order%20a%20First%20Wave%20print%20copy%20of%20the%20following%20SEXA%20Corpus%20book%3A%0A%0AWork%3A%20W049%20%E2%80%94%20SEXA%3A%20An%20Axiomatic%20Closure%20Framework%20for%20Recursive%20Manifold%20Physics%20%E2%80%94%20Exciternion%20Evaluation%2C%20Dimensional%20Collapse%2C%20and%20Cross-Domain%20Constructability%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0AQuantity%3A%20%0A%0AName%3A%20%0AShipping%20address%3A%20%0A%0APhone%3A%20%0A%0APlease%20send%20me%20an%20invoice%20with%20the%20price%2C%20shipping%20and%20the%20expected%20delivery%20window.%0A%0AI%20understand%20that%20First%20Wave%20print%20copies%20are%20made%20to%20order%20and%20are%20issued%20without%20ISBNs.%20When%20the%20ISBN%20editions%20are%20released%2C%20I%20will%20receive%20an%20additional%20ISBN%20copy%20of%20each%20book%20purchased%20at%20no%20charge%3B%20I%20pay%20only%20shipping.%20The%20original%20First%20Wave%20copy%20is%20to%20be%20dedicated%20to%20a%20library%20or%20to%20an%20industrious%20student.%0A%0AThank%20you%2C%0A">Order this book</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W049_SEXA-An-Axiomatic-Closure-Framework-for-Recursiv_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W055">
@@ -1097,7 +1295,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$16.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$38.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="status">Unreleased</p>
+<p class="coming">Not for sale</p>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W055_Extended-Technical-Companion-to-Hardware-Verifia_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W056">
@@ -1117,7 +1316,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$9.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$31.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="status">Unreleased draft</p>
+<p class="coming">Not for sale</p>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W056_A-Recursive-Dimensional-Cascade-Model-of-Gravity_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W058">
@@ -1137,7 +1337,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$9.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$30.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="status">Unreleased draft</p>
+<p class="coming">Not for sale</p>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W058_Monstrous-Moonshine-and-Monster-Symmetric-Admiss_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W061">
@@ -1157,7 +1358,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$9.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$30.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="status">Draft — not for sale</p>
+<p class="coming">Not for sale</p>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W061_Addendum-to-Book-IV-Upgrading-the-Quaternionic-A_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W069">
@@ -1177,11 +1379,13 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$13.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$35.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="status">Compilation volume</p>
+<p class="cern">Author currently under CERN ban</p>
+<p class="coming">Compilation volume — inquire</p>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/sexa-corpus-sealed/releases/download/sealed-4pct-2026-11-23/W069_SEXA-Unified-Field-Theory-The-Structured-Surviva_book_with_cover.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <h3 class="group" id="corpus-diss-books">Each dissertation volume</h3>
-<p class="small">Covers are taken from the verified print edition, as received. Book I is by Jered McClain. The set DOI is 10.17605/OSF.IO/5AT2W. List prices only, and distinct from the First Wave Edition prices above.</p>
+<p class="small">Covers are taken from the verified print edition, as received. Book I is by Jered McClain. The set DOI is 10.17605/OSF.IO/5AT2W. The figures below are catalog list prices, distinct from the First Wave Edition prices above. To buy a dissertation volume, use <a href="#order">How to Order</a>.</p>
 <article class="cbook" id="corpus-W025">
 <figure>
 <picture>
@@ -1199,7 +1403,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$28.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$50.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">Official First Wave Edition prices for the dissertation are listed under <a href="#prices">Retail prices</a>. The figures above are catalog list prices only.</p>
+<a class="cta alt" href="#order">Order in the First Wave Edition</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/cctsexa-com/releases/download/verified-edition-2026-11-23/CCT-SEXA_Book_01_I_print.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W026">
@@ -1219,7 +1424,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$30.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$52.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">Official First Wave Edition prices for the dissertation are listed under <a href="#prices">Retail prices</a>. The figures above are catalog list prices only.</p>
+<a class="cta alt" href="#order">Order in the First Wave Edition</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/cctsexa-com/releases/download/verified-edition-2026-11-23/CCT-SEXA_Book_02_II_print.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W027">
@@ -1239,7 +1445,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$48.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$70.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">Official First Wave Edition prices for the dissertation are listed under <a href="#prices">Retail prices</a>. The figures above are catalog list prices only.</p>
+<a class="cta alt" href="#order">Order in the First Wave Edition</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/cctsexa-com/releases/download/verified-edition-2026-11-23/CCT-SEXA_Book_03_III_print.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W028">
@@ -1259,7 +1466,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$78.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$100.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">Official First Wave Edition prices for the dissertation are listed under <a href="#prices">Retail prices</a>. The figures above are catalog list prices only.</p>
+<a class="cta alt" href="#order">Order in the First Wave Edition</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/cctsexa-com/releases/download/verified-edition-2026-11-23/CCT-SEXA_Book_04_IV_print.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W029">
@@ -1279,7 +1487,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$37.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$59.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">Official First Wave Edition prices for the dissertation are listed under <a href="#prices">Retail prices</a>. The figures above are catalog list prices only.</p>
+<a class="cta alt" href="#order">Order in the First Wave Edition</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/cctsexa-com/releases/download/verified-edition-2026-11-23/CCT-SEXA_Book_05_V_print.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W030">
@@ -1299,7 +1508,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$52.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$74.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">Official First Wave Edition prices for the dissertation are listed under <a href="#prices">Retail prices</a>. The figures above are catalog list prices only.</p>
+<a class="cta alt" href="#order">Order in the First Wave Edition</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/cctsexa-com/releases/download/verified-edition-2026-11-23/CCT-SEXA_Book_06_VI_print.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W031">
@@ -1319,7 +1529,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$81.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$103.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">Official First Wave Edition prices for the dissertation are listed under <a href="#prices">Retail prices</a>. The figures above are catalog list prices only.</p>
+<a class="cta alt" href="#order">Order in the First Wave Edition</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/cctsexa-com/releases/download/verified-edition-2026-11-23/CCT-SEXA_Book_07_VII_print.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W032">
@@ -1339,7 +1550,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$101.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$123.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">Official First Wave Edition prices for the dissertation are listed under <a href="#prices">Retail prices</a>. The figures above are catalog list prices only.</p>
+<a class="cta alt" href="#order">Order in the First Wave Edition</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/cctsexa-com/releases/download/verified-edition-2026-11-23/CCT-SEXA_Book_08_VIII_print.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W033-A">
@@ -1359,7 +1571,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$86.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$108.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">Official First Wave Edition prices for the dissertation are listed under <a href="#prices">Retail prices</a>. The figures above are catalog list prices only.</p>
+<a class="cta alt" href="#order">Order in the First Wave Edition</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/cctsexa-com/releases/download/verified-edition-2026-11-23/CCT-SEXA_Book_09A_IX-A_print.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W033-B">
@@ -1379,7 +1592,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$84.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$106.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">Official First Wave Edition prices for the dissertation are listed under <a href="#prices">Retail prices</a>. The figures above are catalog list prices only.</p>
+<a class="cta alt" href="#order">Order in the First Wave Edition</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/cctsexa-com/releases/download/verified-edition-2026-11-23/CCT-SEXA_Book_09B_IX-B_print.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W034">
@@ -1399,7 +1613,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$49.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$71.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">Official First Wave Edition prices for the dissertation are listed under <a href="#prices">Retail prices</a>. The figures above are catalog list prices only.</p>
+<a class="cta alt" href="#order">Order in the First Wave Edition</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/cctsexa-com/releases/download/verified-edition-2026-11-23/CCT-SEXA_Book_10_X_print.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W035">
@@ -1419,7 +1634,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$52.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$74.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">Official First Wave Edition prices for the dissertation are listed under <a href="#prices">Retail prices</a>. The figures above are catalog list prices only.</p>
+<a class="cta alt" href="#order">Order in the First Wave Edition</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/cctsexa-com/releases/download/verified-edition-2026-11-23/CCT-SEXA_Book_11_XI_print.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W036">
@@ -1439,7 +1655,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$48.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$70.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">Official First Wave Edition prices for the dissertation are listed under <a href="#prices">Retail prices</a>. The figures above are catalog list prices only.</p>
+<a class="cta alt" href="#order">Order in the First Wave Edition</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/cctsexa-com/releases/download/verified-edition-2026-11-23/CCT-SEXA_Book_12_XII_print.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W037">
@@ -1459,7 +1676,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$44.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$66.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">Official First Wave Edition prices for the dissertation are listed under <a href="#prices">Retail prices</a>. The figures above are catalog list prices only.</p>
+<a class="cta alt" href="#order">Order in the First Wave Edition</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/cctsexa-com/releases/download/verified-edition-2026-11-23/CCT-SEXA_Book_13_XIII_print.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W038-A">
@@ -1479,7 +1697,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$83.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$105.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">Official First Wave Edition prices for the dissertation are listed under <a href="#prices">Retail prices</a>. The figures above are catalog list prices only.</p>
+<a class="cta alt" href="#order">Order in the First Wave Edition</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/cctsexa-com/releases/download/verified-edition-2026-11-23/CCT-SEXA_Book_14A_XIV-A_print.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <article class="cbook" id="corpus-W038-B">
@@ -1499,7 +1718,8 @@ footer .by{font:600 15px var(--serif);color:#f3ecdc;letter-spacing:.06em;margin-
 <tr><th scope="row">Full-color edition, softbound</th><td>$82.99</td></tr>
 <tr><th scope="row">Full-color edition, hardbound</th><td>$104.99</td></tr>
 </tbody></table>
-<p class="coming">Print edition — coming soon</p>
+<p class="fw-note">Official First Wave Edition prices for the dissertation are listed under <a href="#prices">Retail prices</a>. The figures above are catalog list prices only.</p>
+<a class="cta alt" href="#order">Order in the First Wave Edition</a>
 <p class="sealed-pdf"><a href="https://github.com/SpaceTimeManhattan/cctsexa-com/releases/download/verified-edition-2026-11-23/CCT-SEXA_Book_14B_XIV-B_print.pdf" download>Download the sealed PDF</a> · U.F.S. seal · DOI seal · Oblivion Mark</p>
 </article>
 <p><a class="cta alt" href="mailto:jered@unifiedfieldsystems.com?cc=Liat@UnifiedFieldSystems.com&amp;subject=SEXA%20Corpus%20print%20edition%20inquiry&amp;body=Hello%20U.F.S.%2C%0A%0AI%20would%20like%20to%20inquire%20about%20the%20SEXA%20Corpus%20print%20edition.%0A%0ASet%20or%20book%3A%20%0ABinding%20%28softbound%20/%20hardbound%3B%20black-and-white%20or%20full-color%29%3A%20%0A%0AName%3A%20%0A%0AThank%20you%2C%0A">Inquire about the print edition</a></p>
