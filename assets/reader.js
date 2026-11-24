@@ -80,7 +80,7 @@ function goto(p, smooth) { p = Math.max(1, Math.min(TOTAL, p | 0)); start(); V.s
 let lastBook = -1;
 function update(p) {
   p = p || curPage(); if (document.activeElement !== inp) inp.value = p;
-  const bi = bookOf(p); if (bi !== lastBook) { lastBook = bi; sel.value = String(D.books[bi].s); dl.href = D.books[bi].f; dl.textContent = 'PDF · Book ' + D.books[bi].r; }
+  const bi = bookOf(p); if (bi !== lastBook) { lastBook = bi; sel.value = String(D.books[bi].s); dl.href = D.books[bi].f; dl.textContent = 'PDF, free to download · Book ' + D.books[bi].r; }
 }
 let ticking = false;
 V.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { ticking = false; update(); }); } }, { passive: true });
